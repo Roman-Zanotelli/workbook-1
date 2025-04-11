@@ -30,6 +30,10 @@ public class SandwichShop {
             return;
         }
         int age = scanner.nextInt();
+        if (age <= 0 || age >= 130){
+            System.out.println("Invalid Age Range");
+            return;
+        }
         float discount = age <= 17 ? .9f : age >= 65 ? .8f : 1; //calculates the discount based off age range
         System.out.println("\nTotal Price After Discount: " + discount * price);
 
