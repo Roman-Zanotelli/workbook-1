@@ -9,7 +9,8 @@ public class BasicCalculator {
         float first = scanner.nextFloat();
         System.out.print("Enter second number: ");
         float second = scanner.nextFloat();
-        System.out.print("Possible calculations:\n(A)dd\n(S)ubtract \n(M)ultiply \n(D)ivide\nPlease select an option: ");
+        //System.out.print("Possible calculations:\n(A)dd\n(S)ubtract \n(M)ultiply \n(D)ivide\nPlease select an option: ");
+        System.out.print("Test: ");
         String option = scanner.next();
         System.out.println(first + " * " + second + " = " + first * second);
     }
