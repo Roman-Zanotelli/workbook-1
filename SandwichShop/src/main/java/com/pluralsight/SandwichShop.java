@@ -16,7 +16,7 @@ public class SandwichShop {
             System.out.println("Invalid Selection");
             return;
         }
-        System.out.print("Would you like to make your sandwich loaded?\n- Regular: +$1.00\n- Large: +$1.75\n Select (Y/N): ");
+        System.out.print("\nWould you like to make your sandwich loaded?\n- Regular: +$1.00\n- Large: +$1.75\nSelect (Y/N): ");
         String is_loaded = scanner.next();
         if (is_loaded.equalsIgnoreCase("Y") || is_loaded.equalsIgnoreCase("Yes")){ //check if the response was yes
             price += selection == 1 ? 1 : 1.75f; //checks which sandwich selection was previously made and adds the appropriate price increase
@@ -24,14 +24,14 @@ public class SandwichShop {
             System.out.println("Invalid Input");
             return;
         }
-        System.out.print("Enter Age: ");
+        System.out.print("\nEnter Age: ");
         if (!scanner.hasNextInt()){ //check for invalid input
             System.out.println("Invalid Input");
             return;
         }
         int age = scanner.nextInt();
         float discount = age <= 17 ? .9f : age >= 65 ? .8f : 1; //calculates the discount based off age range
-        System.out.println("Total Price After Discount: " + discount * price);
+        System.out.println("\nTotal Price After Discount: " + discount * price);
 
     }
 }
